@@ -13,11 +13,16 @@
 
             #hello {
                 font-size: 30px;
-                animation: move 1s ease-out forwards;
+                animation: move 2s ease-out forwards;
             }
 
             @keyframes move {
                 0% {
+                    transform: translateY(30px);
+                    opacity: 0;
+                }
+
+                50% {
                     transform: translateY(30px);
                     opacity: 0;
                 }
