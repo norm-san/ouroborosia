@@ -9,9 +9,23 @@
 
             body {
                 margin: 0;
-                background-color: black;
+                body {
+    background-image: url("Screenshot 2026-08-30 19.52.10.png");
+    background-size: cover;
+    background-attachment: fixed;
                 color: white;
             }
+
+                .background {
+    position: relative;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
 
             .ouroborosia {
                 text-align: center;
@@ -106,6 +120,8 @@
     </head>
 
     <body>
+
+        <div class="background">
         
         <div class="ouroborosia">
         <div class="flagImg"><img src="d10969f44dd21c8eeac48fd6a1e33951a64df7b28621c13346c236a732f8f813.gif" id="flag">
@@ -128,5 +144,7 @@
 
         <div>
         </div>
+
+        </div><!-- backgroundの終焉 -->
     </body>
 </html>
