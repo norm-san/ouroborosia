@@ -33,31 +33,34 @@
             }
 
             #hello {
-                transform: translate(-50%, -50%);
     position: absolute;
+    top: 50%;
+    left: 50%;
+
     font-size: 40px;
     color: white;
 
     animation: move 2s ease-out forwards;
     z-index: 2;
 }
+}
 
             @keyframes move {
-                0% {
-                    transform: translateY(30px);
-                    opacity: 0;
-                }
+    0% {
+        transform: translate(-50%, calc(-50% + 30px));
+        opacity: 0;
+    }
 
-                50% {
-                    transform: translateY(30px);
-                    opacity: 0;
-                }
+    50% {
+        transform: translate(-50%, calc(-50% + 30px));
+        opacity: 0;
+    }
 
-                100% {
-                    transform: translateY(0px);
-                    opacity: 1;
-                }
-            }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
 
                 .text1, .text2, .text3 {
                     display: flex;
