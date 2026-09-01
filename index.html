@@ -7,13 +7,39 @@
 
         <style>
             
+        body {
+            background-color: black;
+            color: white;
+        }
 
+        #welcome {
+            font-size: 40px;
+            animation: fade 1s;
+        }
+
+        @keyframes fade {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+        }
+
+            .hello {
+                text-align: center;
+            }
             
         </style>
     </head>
 
     <body>
-
+        <div class="hello">
+        <h1 id="welcome">ようこそ、無垢の国ウロボロシア<br>公式ホームページへ</h1>
+        </div>
 
         
     </body>
