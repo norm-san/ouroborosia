@@ -60,9 +60,8 @@
                 z-index: 3;
             }
 
-            .green a {
-                color: white;
-                text-decoration: none;
+            .green p {
+                cursor: pointer;
             }
 
             .news {
@@ -99,7 +98,7 @@
     <body>
         <div class="hello">
         <h1 id="welcome">ようこそ、無垢の国ウロボロシア<br>公式ホームページへ</h1>
-        <div class="green"><a href="about.html">詳細を見る</a></div>
+        <div class="green"><p id="aboutLink">詳細を見る</p></div>
         <img src="d10969f44dd21c8eeac48fd6a1e33951a64df7b28621c13346c236a732f8f813.gif">
         </div>
 
@@ -137,13 +136,23 @@
             <div class="left">
             <h1>どんな人に向いてる？</h1>
             <p>チャットが活発であること、
-            <br>国の方針が「とにかく楽しむ」であることから
-            <br>あるけみすとを最大限楽しみたい人に向いています！</p>
+            <br>国の方針が「とにかく楽しむ」であることから、
+            <br>あるけみすとを最大限楽しみたい人や
+            <br>楽しみを共有したい人に向いています！</p>
             </div>
         </div>
             
         </div>
 
-        
+        <script>
+            const aboutLink = document.getElementById('aboutLink');
+            const about = document.querySelector('.about');
+
+            aboutLink.addEventListener('click', () => {
+            about.scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+        </script>
     </body>
 </html>
